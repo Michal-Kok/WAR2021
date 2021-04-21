@@ -1,14 +1,35 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { StyledInformationList, StyledListElement, StyledParagraph, StyledSubtitle, StyledSVGContainer, StyledTitle, Wrapper } from './LandingPageInformations.style';
 import { AiOutlineCustomerService, AiOutlineHeart } from 'react-icons/ai';
 import { GiChurch } from 'react-icons/gi';
 import { IoBeerOutline } from 'react-icons/io5';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 const LandingPageInformations = () => {
 
+    useEffect(() => {
+        const info = document.querySelector(".information");
+
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.set(info.children, {opacity: 0, y: 150,});
+        const tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: info,
+                start: 'top 25%',
+            }
+        });
+
+        tl.to(
+            info.children,
+            {opacity: 1, y: 0, stagger: .2,}
+        )
+}, [])
+
     return (
         <>
-            <Wrapper>
+            <Wrapper className="information">
                 <StyledTitle>
                     Dlaczego Kraków
                 </StyledTitle>

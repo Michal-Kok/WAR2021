@@ -8,7 +8,7 @@ const Footer = () => {
     return(
         <Wrapper>
              <StyledTitle>
-                 Contact us and learn more
+                 Skontaktuj się z nami!
              </StyledTitle>
              <StyledMediaList>
                 <FaFacebookF/>

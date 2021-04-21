@@ -14,7 +14,7 @@ const Navigation = () => {
                         Forum
                     </StyledLink>
                     <StyledLink to="/">
-                        Unable stuff
+                        Wkrótce
                     </StyledLink>
                 </StyledNavigationList>
                 <StyledMediaList>

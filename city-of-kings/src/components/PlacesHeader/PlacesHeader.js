@@ -7,7 +7,7 @@ const PlacesHeader = () => {
     return (
         <Wrapper background={img} >
             <StyledTitle>
-                Poniżej znajdziesz Informcje o ciekawych miejscach
+                Poniżej znajdziesz miejsce do wymiany informacji z innymi
             </StyledTitle>
         </Wrapper>
     )

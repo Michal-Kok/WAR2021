@@ -28,7 +28,7 @@ export const StyledInput = styled.input`
 
 export const StyledSubmitButton = styled.div`
     background-color: ${({theme}) => theme.colors.pink};
-    width: 60px;
+    width: 80px;
     height: 100%;
     text-align: center;
     line-height: 30px;
