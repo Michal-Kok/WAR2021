@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-    height: 600px;
+    height: 800px;
     width: 100vw;
-    padding: 80px 0;
+    padding: 190px 0;
     background-color: ${({ theme }) => theme.colors.grey};
     
 `;

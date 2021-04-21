@@ -15,7 +15,7 @@ const Header = () => {
             <StyledTitle>
                 Poznaj bliżej Kraków
             </StyledTitle>
-            <StyledHeaderButton onClick={() => history.push('/places')}>
+            <StyledHeaderButton onClick={() => history.push('/forum')}>
                 Atrakcje
             </StyledHeaderButton>
         </Wrapper>

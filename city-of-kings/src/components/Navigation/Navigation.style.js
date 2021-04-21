@@ -25,6 +25,11 @@ export const StyledMediaList = styled.ul`
     border-left: 1px solid white;
     font-size: 25px;
     color: ${({ theme }) => theme.colors.white};
+    cursor: pointer;
+
+    svg {
+        color: ${({ theme }) => theme.colors.grey};
+    }
 
 `;
 
@@ -44,7 +49,7 @@ export const StyledLink = styled(NavLink)`
     text-decoration: none;
 
     &:hover {
-        color: ${({ theme }) => theme.colors.white};
+        color: ${({ theme }) => theme.colors.grey};
     }
 `;
 

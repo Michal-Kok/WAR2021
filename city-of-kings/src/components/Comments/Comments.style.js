@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
     width: 100%;
-    padding: 10% 5%;
+    padding: 5% 0;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -15,6 +15,7 @@ export const StyledForm = styled.form`
     display: flex;
     justify-content: space-between;
     height: 30px;
+    margin-top: 20px;
 `;
 
 export const StyledInput = styled.input`

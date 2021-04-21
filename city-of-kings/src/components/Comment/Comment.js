@@ -1,13 +1,15 @@
 import React from 'react';
-import { StyledContent, Wrapper } from './Comment.style';
+import { StyledContent, StyledTextContainer, Wrapper } from './Comment.style';
 
 const Comment = ({ content }) => {
 
     return(
         <Wrapper>
-            <StyledContent>
-                {content}
-            </StyledContent>
+            <StyledTextContainer>
+                <StyledContent>
+                    {content}
+                </StyledContent>
+            </StyledTextContainer>
         </Wrapper>
     );
 

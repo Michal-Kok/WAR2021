@@ -10,11 +10,11 @@ const Navigation = () => {
                     <StyledLink to="/">
                         Home
                     </StyledLink>
-                    <StyledLink to="/">
-                        Home
+                    <StyledLink to="/forum">
+                        Forum
                     </StyledLink>
                     <StyledLink to="/">
-                        Home
+                        Unable stuff
                     </StyledLink>
                 </StyledNavigationList>
                 <StyledMediaList>

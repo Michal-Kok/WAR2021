@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Footer from '../components/Footer/Footer';
 import Navigation from '../components/Navigation/Navigation';
 
 const Wrapper = styled.div`
@@ -16,6 +17,7 @@ const MainTemplate = ({children}) => {
        < Wrapper >
         < Navigation />
         {children}
+        <Footer/>
        </Wrapper>
     );
 }

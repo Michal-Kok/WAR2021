@@ -20,12 +20,17 @@ const Comments = () => {
             return;
         }
 
-        if (inputValue.length > 130) {
+        if (inputValue.length > 50) {
             setError('Za długa wiadomość!');
             return;
         }
 
-        db.collection("comments").doc(String(comments.length)).set({ content: inputValue })
+        let segregateStr = '';
+        comments.forEach(comment => {
+            segregateStr += 'a';
+        });
+
+        db.collection("comments").doc(segregateStr + 'a').set({ content: inputValue })
             .then(() => {
                 console.log("Document successfully written!");
                 setError('');
@@ -41,7 +46,7 @@ const Comments = () => {
             const commentsArray = [];
             snapshot.forEach(doc => {
                 commentsArray.push({ ...doc.data(), id: doc.id });
-            })
+            });
             setComments(commentsArray);
         });
 

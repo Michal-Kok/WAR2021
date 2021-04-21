@@ -16,7 +16,7 @@ function App() {
             <Route exact path="/">
               <LandingPage />
             </Route>
-            <Route exact path="/places">
+            <Route exact path="/forum">
               <Places />
             </Route>
           </Switch>
