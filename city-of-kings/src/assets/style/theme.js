@@ -6,8 +6,12 @@ export const theme = {
         darkColor: '#212121',
         black: '#121212',
         green: '#1db954',
+        lightBlue: '#cae6d6',
+        pink: '#f00c93',
+        grey: '#F1F1F1',
     },
     fontSize: {
+        header: '100px',
         xl: '45px',
         l: '30px',
         m: '19px',

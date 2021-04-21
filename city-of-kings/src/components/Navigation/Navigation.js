@@ -1,12 +1,28 @@
 import React from 'react';
-
+import { StyledLink, StyledMediaList, StyledNavigationList, Wrapper } from './Navigation.style';
+import { FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
 const Navigation = () => {
 
     return(
         <>
-        <h1>
-            Nawigacja
-        </h1>
+            <Wrapper>
+                <StyledNavigationList>
+                    <StyledLink to="/">
+                        Home
+                    </StyledLink>
+                    <StyledLink to="/">
+                        Home
+                    </StyledLink>
+                    <StyledLink to="/">
+                        Home
+                    </StyledLink>
+                </StyledNavigationList>
+                <StyledMediaList>
+                    <FaFacebookF/>
+                    <FaTwitter/>
+                    <FaLinkedinIn/>
+                </StyledMediaList>
+            </Wrapper>
         </>
     )
 }
