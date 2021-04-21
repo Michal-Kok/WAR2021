@@ -1,12 +1,13 @@
 import React from 'react';
+import Attractions from '../components/Attcractions/Attractions';
+import PlacesHeader from '../components/PlacesHeader/PlacesHeader';
 
 const Places = () => {
 
     return(
         <>
-        <h1>
-            Places Page
-        </h1>
+            <PlacesHeader/>
+            <Attractions/>
         </>
     )
 }
